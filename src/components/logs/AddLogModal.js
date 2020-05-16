@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import TechSelectOptions from "../techs/TechSelectOptions";
-// import { connect } from "react-redux";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
-// import { addLog } from "../../actions/logActions";
+import { addLog } from "../../actions/logActions";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddLogModal = ({ addLog }) => {
@@ -98,17 +98,13 @@ const AddLogModal = ({ addLog }) => {
   );
 };
 
-// AddLogModal.propTypes = {
-//   addLog: PropTypes.func.isRequired,
-// };
-
 const modalStyle = {
   width: "75%",
   height: "75%",
 };
 
-export default AddLogModal;
-// export default connect(
-//   null,
-//   { addLog }
-// )(AddLogModal);
+AddLogModal.propTypes = {
+  addLog: PropTypes.func.isRequired,
+};
+
+export default connect(null, { addLog })(AddLogModal);
