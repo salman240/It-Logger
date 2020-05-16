@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { updateLog } from "../../actions/logActions";
+import TechSelectOptions from "../techs/TechSelectOptions";
 
 const EditLogModal = ({ current, updateLog }) => {
   const [message, setMessage] = useState("");
@@ -66,7 +67,7 @@ const EditLogModal = ({ current, updateLog }) => {
               <option value="" disabled>
                 Select Technician
               </option>
-              {/* <TechSelectOptions /> */}
+              <TechSelectOptions />
             </select>
           </div>
         </div>

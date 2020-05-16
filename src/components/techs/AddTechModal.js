@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import { connect } from 'react-redux';
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
-// import { addTech } from '../../actions/techActions';
+import { addTech } from "../../actions/techActions";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddTechModal = ({ addTech }) => {
@@ -70,9 +70,8 @@ const AddTechModal = ({ addTech }) => {
   );
 };
 
-// AddTechModal.propTypes = {
-//   addTech: PropTypes.func.isRequired,
-// };
+AddTechModal.propTypes = {
+  addTech: PropTypes.func.isRequired,
+};
 
-export default AddTechModal;
-// export default connect(null, { addTech })(AddTechModal);
+export default connect(null, { addTech })(AddTechModal);
