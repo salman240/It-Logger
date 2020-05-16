@@ -1,26 +1,42 @@
 {
   "logs": [
     {
-      "message": "New",
+      "message": "Log added",
       "attention": true,
-      "tech": "salman",
-      "date": "2020-05-16T12:06:44.281Z",
+      "tech": "Sam Smith",
+      "date": "2020-05-16T12:53:02.713Z",
       "id": 1
     },
     {
-      "id": 2,
-      "message": "No",
+      "message": "Log added",
       "attention": true,
-      "tech": "azam",
-      "date": "2020-05-16T12:08:32.634Z"
+      "tech": "Sam Smith",
+      "date": "2020-05-16T12:53:02.713Z",
+      "id": 2
+    },
+    {
+      "message": "Log added",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2020-05-16T12:53:02.713Z",
+      "id": 3
+    },
+    {
+      "message": "Log added",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2020-05-16T12:53:02.713Z",
+      "id": 4
+    },
+    {
+      "message": "Log added",
+      "attention": true,
+      "tech": "Sam Smith",
+      "date": "2020-05-16T12:53:02.713Z",
+      "id": 5
     }
   ],
   "techs": [
-    {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
     {
       "id": 2,
       "firstName": "Sam",
